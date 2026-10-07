@@ -1,0 +1,25 @@
+{
+  "name": "dsh-side-coder",
+  "version": "0.1.0",
+  "description": "侧栏编程：真右栏停靠的 Monaco 编辑器 + AI 改动实时红绿对比（基于 dsh-classic-coding 改造）",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-slots"
+      ]
+    }
+  },
+  "license": "MIT"
+}

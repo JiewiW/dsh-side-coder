@@ -1,0 +1,10 @@
+# dsh-side-coder bundle patch: mount the side-coder plugin.
+#
+# Applied when this bundle appears in a profile's dsh.profile.bundles list.
+# The node half (package root) registers /side-coder RPC endpoints for file
+# system operations and records tool-driven file changes (before/after text);
+# the browser half (dsh.client) docks a Monaco editor + live diff panel into
+# the native right sidebar (sidebar.right.pane.tab).
+- insert:
+    - id: side-coder
+      name: dsh-side-coder
