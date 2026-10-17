@@ -16,3 +16,8 @@ _*.js
 # 系统杂项
 .DS_Store
 Thumbs.db
+
+# 本机回滚备份（不应入库）
+rollback/
+rollback.ps1
+
