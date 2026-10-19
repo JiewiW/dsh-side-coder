@@ -21,3 +21,6 @@ Thumbs.db
 rollback/
 rollback.ps1
 
+# 内部开发文档（含本机路径，仅本地保留，不随发布）
+docs/
+
